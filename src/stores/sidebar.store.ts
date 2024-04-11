@@ -2,7 +2,6 @@ import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 import { useWindowSize } from '@vueuse/core'
 
-
 export const useSidebarStore = defineStore('sidebar', () => {
   const isFullSidebarOpen = ref(false)
   const mediaQuery = ref('')
@@ -10,6 +9,7 @@ export const useSidebarStore = defineStore('sidebar', () => {
   function init() {
     setBreakpoints()
     window.addEventListener('resize', setBreakpoints)
+
     function setBreakpoints(): void {
       const width = useWindowSize().width.value
       if (width >= 1280) mediaQuery.value = 'desktop'

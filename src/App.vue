@@ -6,7 +6,6 @@ import TheVideos from '@/components/TheVideos.vue'
 import TheSidebar from '@/components/layout/sidebar/TheSidebar.vue'
 
 
-
 </script>
 
 <template>
