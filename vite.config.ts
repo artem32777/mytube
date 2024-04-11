@@ -3,9 +3,11 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
+const ASSET_URL = process.env.ASSET_URL || '/';
+
 // https://vitejs.dev/config/
 export default defineConfig({
-  base:  '/mytube/',
+  base: ASSET_URL,
   plugins: [
     vue(),
   ],

@@ -24,6 +24,7 @@ const sidebarStore = useSidebarStore()
             <UiIcon name="burger" />
           </button>
         </UiTooltip>
+        test
         <UiLogo class="hidden sm:block" />
       </div>
     </div>
