@@ -6,7 +6,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: import.meta.env.VITE_SOME_KEY === 'production' ? '/mytube/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/mytube/' : '/',
   plugins: [
     vue(),
   ],
